@@ -1,0 +1,15 @@
+/* Variables */
+@import "variables/_sizes.scss";
+@import "variables/_palettes.scss";
+@import "variables/_theme.scss";
+
+/* Base */
+@import "base/_mixins.scss";
+/* TO DO: Get fonts to render correctly
+@import "base/_fonts.scss"; */
+@import "base/_typography.scss";
+@import "base/_icons.scss";
+@import "base/_global.scss";
+
+/* Components */
+@import "../components/Header/_header.scss";

@@ -1,0 +1,70 @@
+.header {
+  align-items: center;
+  background-color: $base-darker;
+  display: flex;
+  padding: 1rem;
+
+  @include atMobile {
+    padding: 1rem 2rem;
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: auto;
+
+    .logo__image {
+      height: 3rem;
+      fill: $primary-dark;
+    }
+
+    .logo__name {
+      color: $base-light;
+      display: none;
+      @include font-display-xl;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      @include atTablet {
+        display: block;
+      }
+    }
+  }
+
+  &__nav-mobile {
+    display: block;
+    @include atTablet {
+      display: none;
+    }
+    .nav__image {
+      height: 1rem;
+      fill: none;
+      stroke: $base-light;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+    }
+  }
+
+  &__nav-list {
+    @include listReset;
+    display: none;
+    flex: 0 0 100%;
+    flex-direction: row;
+    gap: 2rem;
+    margin-left: auto;
+
+    @include atTablet {
+      display: flex;
+    }
+  }
+
+  &__nav-link {
+    @include font-sans-md;
+    color: $base-light;
+    flex: 0 0 100%;
+    text-decoration: none;
+  }
+}
