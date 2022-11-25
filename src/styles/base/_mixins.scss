@@ -36,12 +36,21 @@
 }
 
 @mixin srOnly {
-  position: absolute;
   left: -10000px;
-  top: auto;
-  width: 1px;
   height: 1px;
   overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+@mixin srOnlyReset {
+  left: initial;
+  height: initial;
+  overflow: initial;
+  position: initial;
+  top: initial;
+  width: initial;
 }
 
 /*@mixin tablet-lg {
