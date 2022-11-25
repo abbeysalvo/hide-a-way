@@ -6,16 +6,13 @@ import React from "react";
  *
  * USWDS: https://designsystem.digital.gov/components/header/
  *
- * DO:    It is recommended to include the "official government website"
- *        banner and a logo or site name.
- *
  * DO:    While a horizontal navigation bar is just one option for navigation design,
  *        it is one of the most visible and familiar ways of helping users navigate a site.
  */
 const Header = ({ ...props }) => {
   return (
     <header class="header">
-      <div class="header__logo">
+      <a class="header__logo" href="/">
         <svg
           class="logo__image"
           xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +21,7 @@ const Header = ({ ...props }) => {
           <polygon points="27.84 3.58 27.88 0 18 0 18 9.46 9.88 9.46 9.88 0 0 0 0 25.1 5.67 28.79 9.88 28.78 15.41 32.37 15.41 20.01 9.88 16.42 18 16.42 18 28.81 27.88 28.81 27.84 3.58" />
         </svg>
         <span class="logo__name">Hide-A-Way</span>
-      </div>
+      </a>
       <nav class="header__nav">
         <div class="header__nav-mobile">
           <svg
