@@ -19,6 +19,15 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  @include font-display-xl;
+  letter-spacing: 1px;
+
+  @include atDesktop {
+    @include font-display-2xl;
+  }
+}
+
 h2 {
   @include font-display-lg;
   &:first-child {

@@ -11,5 +11,9 @@
 @import "base/_icons.scss";
 @import "base/_global.scss";
 
+/* Modules */
+@import "modules/_wrapper.scss";
+
 /* Components */
 @import "../components/Header/_header.scss";
+@import "../components/Modal/_modal.scss";
