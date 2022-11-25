@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 /**
  * A header helps users identify where they are and provides a quick,
@@ -10,6 +11,12 @@ import React from "react";
  *        it is one of the most visible and familiar ways of helping users navigate a site.
  */
 const Header = ({ ...props }) => {
+  const navLinks = [
+    { path: "/", title: "Home" },
+    { path: "/shop", title: "Shop" },
+    { path: "/about", title: "About Us" },
+  ];
+
   return (
     <header className="header" role="banner">
       <a className="header__logo" href="/">
@@ -52,27 +59,32 @@ const Header = ({ ...props }) => {
           </svg>
         </div>
         <ul className="header__nav-list">
-          {/**
-           * ACCESSIBILITY: Label Active Link
-           * Provide an invisible label that is read aloud to screen reader
-           * users and used by other assistive technologies to mark the current item.
-           */}
-          <li>
+          {navLinks.map(({ path, title }) => (
+            <li>
+              {/**
+               * ACCESSIBILITY: Label Active Link
+               * Provide an invisible label that is read aloud to screen reader users
+               * and used by other assistive technologies to mark the current item.
+               * This is handled by default with NavLink
+               */}
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "header__nav-link header__nav-link--active"
+                    : "header__nav-link"
+                }
+                to={path}
+              >
+                {title}
+              </NavLink>
+            </li>
+          ))}
+          {/*<li>
             <span className="current header__nav-link">
               <span className="sr-only">Current Page: </span>
               Home
             </span>
-          </li>
-          <li>
-            <a className="header__nav-link" href="/shop">
-              Shop
-            </a>
-          </li>
-          <li>
-            <a className="header__nav-link" href="/about">
-              About Us
-            </a>
-          </li>
+          </li>*/}
         </ul>
       </nav>
     </header>

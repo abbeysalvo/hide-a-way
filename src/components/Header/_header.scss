@@ -68,5 +68,9 @@
     color: $base-light;
     flex: 0 0 100%;
     text-decoration: none;
+
+    &--active {
+      color: $primary;
+    }
   }
 }
