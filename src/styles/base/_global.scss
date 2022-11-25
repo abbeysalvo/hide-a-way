@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-sans;
+  color: $base-dark;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $primary-dark;
+  font-family: $font-display;
+  letter-spacing: $font-display--letter-spacing-less;
+  text-decoration: none;
+}
+
+h1 {
+  @include font-display-xl;
+  letter-spacing: 1px;
+
+  @include atDesktop {
+    @include font-display-2xl;
+  }
+}
+
+h2 {
+  @include font-display-lg;
+  &:first-child {
+    margin-top: 0;
+  }
+  margin: 0.5rem 0;
+
+  @include atTablet {
+    @include font-display-xl;
+    margin: 0.75rem 0;
+  }
+}
+
+h3 {
+  @include font-sans-sm;
+  &:first-child {
+    margin-top: 0;
+  }
+  color: $base;
+  font-weight: 300;
+  margin: 0.25rem 0;
+  text-transform: uppercase;
+
+  @include atTablet {
+    @include font-sans-md;
+    font-weight: 300;
+    margin: 0.5rem 0;
+  }
+}
+
+.sr-only {
+  @include srOnly;
+}

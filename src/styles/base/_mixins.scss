@@ -1,0 +1,58 @@
+@mixin atMobile {
+  @media (min-width: 440px) {
+    @content;
+  }
+}
+
+@mixin atTablet {
+  @media (min-width: 760px) {
+    @content;
+  }
+}
+
+@mixin atDesktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin listReset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@mixin srOnly {
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+@mixin srOnlyReset {
+  left: initial;
+  height: initial;
+  overflow: initial;
+  position: initial;
+  top: initial;
+  width: initial;
+}
+
+/*@mixin tablet-lg {
+  .tablet-lg\:@include-content;
+}*/

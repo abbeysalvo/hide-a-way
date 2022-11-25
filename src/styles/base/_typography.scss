@@ -1,0 +1,217 @@
+$font-sans: "Roboto Condensed", "Roboto", sans-serif;
+$font-sans--letter-spacing-less: 0;
+$font-sans--letter-spacing: 0;
+$font-display: "League Gothic", sans-serif;
+$font-display--letter-spacing-less: 1px;
+$font-display--letter-spacing: 2px;
+$text-shadow-sm: 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+.font {
+  &-sans {
+    &-3xs {
+      font-family: $font-sans;
+      font-size: $font-sans-3xs;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+    &-2xs {
+      font-family: $font-sans;
+      font-size: $font-sans-2xs;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+    &-xs {
+      font-family: $font-sans;
+      font-size: $font-sans-xs;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+    &-sm {
+      font-family: $font-sans;
+      font-size: $font-sans-sm;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+    &-md {
+      font-family: $font-sans;
+      font-size: $font-sans-md;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+    &-lg {
+      font-family: $font-sans;
+      font-size: $font-sans-lg;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+    &-xl {
+      font-family: $font-sans;
+      font-size: $font-sans-xl;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+    &-2xl {
+      font-family: $font-sans;
+      font-size: $font-sans-2xl;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+    &-3xl {
+      font-family: $font-sans;
+      font-size: $font-sans-3xl;
+      font-weight: 200;
+      letter-spacing: $font-sans--letter-spacing;
+    }
+  }
+
+  &-display {
+    &-sans {
+      &-3xs {
+        font-family: $font-display;
+        font-size: $font-display-3xs;
+        letter-spacing: $font-display--letter-spacing-less;
+      }
+      &-2xs {
+        font-family: $font-display;
+        font-size: $font-display-2xs;
+        letter-spacing: $font-display--letter-spacing-less;
+      }
+      &-xs {
+        font-family: $font-display;
+        font-size: $font-display-xs;
+        letter-spacing: $font-display--letter-spacing-less;
+      }
+      &-sm {
+        font-family: $font-display;
+        font-size: $font-display-sm;
+        letter-spacing: $font-display--letter-spacing-less;
+      }
+      &-md {
+        font-family: $font-display;
+        font-size: $font-display-md;
+        letter-spacing: $font-display--letter-spacing;
+      }
+      &-lg {
+        font-family: $font-display;
+        font-size: $font-display-lg;
+        letter-spacing: $font-display--letter-spacing;
+      }
+      &-xl {
+        font-family: $font-display;
+        font-size: $font-display-xl;
+        letter-spacing: $font-display--letter-spacing;
+      }
+      &-2xl {
+        font-family: $font-display;
+        font-size: $font-display-2xl;
+        letter-spacing: $font-display--letter-spacing;
+      }
+      &-3xl {
+        font-family: $font-display;
+        font-size: $font-display-3xl;
+        letter-spacing: $font-display--letter-spacing;
+      }
+    }
+  }
+}
+
+@mixin font-sans-3xs {
+  font-family: $font-sans;
+  font-size: $font-sans-3xs;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing-less;
+}
+@mixin font-sans-2xs {
+  font-family: $font-sans;
+  font-size: $font-sans-2xs;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing-less;
+}
+@mixin font-sans-xs {
+  font-family: $font-sans;
+  font-size: $font-sans-xs;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing-less;
+}
+@mixin font-sans-sm {
+  font-family: $font-sans;
+  font-size: $font-sans-sm;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing-less;
+}
+@mixin font-sans-md {
+  font-family: $font-sans;
+  font-size: $font-sans-md;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing-less;
+}
+@mixin font-sans-lg {
+  font-family: $font-sans;
+  font-size: $font-sans-lg;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing;
+}
+@mixin font-sans-xl {
+  font-family: $font-sans;
+  font-size: $font-sans-xl;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing;
+}
+@mixin font-sans-2xl {
+  font-family: $font-sans;
+  font-size: $font-sans-2xl;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing;
+}
+@mixin font-sans-3xl {
+  font-family: $font-sans;
+  font-size: $font-sans-3xl;
+  font-weight: 200;
+  letter-spacing: $font-sans--letter-spacing;
+}
+
+@mixin font-display-3xs {
+  font-family: $font-display;
+  font-size: $font-display-3xs;
+  letter-spacing: $font-display--letter-spacing;
+}
+@mixin font-display-2xs {
+  font-family: $font-display;
+  font-size: $font-display-2xs;
+  letter-spacing: $font-display--letter-spacing;
+}
+@mixin font-display-xs {
+  font-family: $font-display;
+  font-size: $font-display-xs;
+  letter-spacing: $font-display--letter-spacing;
+}
+@mixin font-display-sm {
+  font-family: $font-display;
+  font-size: $font-display-sm;
+  letter-spacing: $font-display--letter-spacing;
+}
+@mixin font-display-md {
+  font-family: $font-display;
+  font-size: $font-display-md;
+  letter-spacing: $font-display--letter-spacing;
+}
+@mixin font-display-lg {
+  font-family: $font-display;
+  font-size: $font-display-lg;
+  letter-spacing: $font-display--letter-spacing;
+}
+@mixin font-display-xl {
+  font-family: $font-display;
+  font-size: $font-display-xl;
+  letter-spacing: $font-display--letter-spacing;
+}
+@mixin font-display-2xl {
+  font-family: $font-display;
+  font-size: $font-display-2xl;
+  letter-spacing: $font-display--letter-spacing;
+}
+@mixin font-display-3xl {
+  font-family: $font-display;
+  font-size: $font-display-3xl;
+  letter-spacing: $font-display--letter-spacing;
+}
