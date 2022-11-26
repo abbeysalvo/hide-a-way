@@ -17,8 +17,13 @@ a {
   font-family: $font-display;
   letter-spacing: $font-display--letter-spacing-less;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
+/* HEADINGS */
 h1 {
   @include font-display-xl;
   letter-spacing: 1px;
@@ -58,6 +63,7 @@ h3 {
   }
 }
 
+/* SCREEN READER ACCESSIBILITY */
 .sr-only {
   @include srOnly;
 }

@@ -1,17 +1,17 @@
 @mixin atMobile {
-  @media (min-width: 440px) {
+  @media (min-width: $mobileWidth) {
     @content;
   }
 }
 
 @mixin atTablet {
-  @media (min-width: 760px) {
+  @media (min-width: $tabletWidth) {
     @content;
   }
 }
 
 @mixin atDesktop {
-  @media (min-width: 1200px) {
+  @media (min-width: $desktopWidth) {
     @content;
   }
 }
@@ -51,6 +51,17 @@
   position: initial;
   top: initial;
   width: initial;
+}
+
+@mixin borderSeparator(
+  $borderColor: $base,
+  $position: "bottom",
+  $spacing: 2rem,
+  $strokeThickness: 1px
+) {
+  border-#{$position}: solid $strokeThickness $borderColor;
+  margin-#{$position}: $spacing;
+  padding-#{$position}: $spacing;
 }
 
 /*@mixin tablet-lg {

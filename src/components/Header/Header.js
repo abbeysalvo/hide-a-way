@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { siteNavigation } from "../..";
 
 /**
  * A header helps users identify where they are and provides a quick,
@@ -11,12 +12,6 @@ import { NavLink } from "react-router-dom";
  *        it is one of the most visible and familiar ways of helping users navigate a site.
  */
 const Header = ({ ...props }) => {
-  const navLinks = [
-    { path: "/", title: "Home" },
-    { path: "/shop", title: "Shop" },
-    { path: "/about", title: "About Us" },
-  ];
-
   return (
     <header className="header" role="banner">
       <a className="header__logo" href="/">
@@ -59,7 +54,7 @@ const Header = ({ ...props }) => {
           </svg>
         </div>
         <ul className="header__nav-list">
-          {navLinks.map(({ path, title }) => (
+          {siteNavigation.map(({ path, title }) => (
             <li>
               {/**
                * ACCESSIBILITY: Label Active Link
@@ -79,12 +74,6 @@ const Header = ({ ...props }) => {
               </NavLink>
             </li>
           ))}
-          {/*<li>
-            <span className="current header__nav-link">
-              <span className="sr-only">Current Page: </span>
-              Home
-            </span>
-          </li>*/}
         </ul>
       </nav>
     </header>

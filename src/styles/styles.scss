@@ -3,17 +3,28 @@
 @import "variables/_palettes.scss";
 @import "variables/_theme.scss";
 
+/* Funcitons */
+@import "functions/_functions.scss";
+
 /* Base */
 @import "base/_mixins.scss";
 /* TO DO: Get fonts to render correctly
 @import "base/_fonts.scss"; */
+@import "base/_margin.scss";
 @import "base/_typography.scss";
-@import "base/_icons.scss";
+@import "base/_width.scss";
 @import "base/_global.scss";
+
+/* Icons */
+@import "icons/_icons-payment.scss";
+@import "icons/_icons-social.scss";
+@import "icons/_icons.scss";
 
 /* Modules */
 @import "modules/_wrapper.scss";
+@import "modules/_flex.scss";
 
 /* Components */
 @import "../components/Header/_header.scss";
+@import "../components/Footer/_footer.scss";
 @import "../components/Modal/_modal.scss";

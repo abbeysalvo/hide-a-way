@@ -1,0 +1,37 @@
+.width {
+  @each $sizeName, $size in $sizes {
+    &-#{$sizeName} {
+      width: $size;
+    }
+  }
+}
+
+@include atMobile {
+  .mobile\:width {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        width: $size;
+      }
+    }
+  }
+}
+
+@include atTablet {
+  .tablet\:width {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        width: $size;
+      }
+    }
+  }
+}
+
+@include atDesktop {
+  .desktop\:width {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        width: $size;
+      }
+    }
+  }
+}
