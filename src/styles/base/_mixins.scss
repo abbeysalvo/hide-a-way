@@ -1,17 +1,17 @@
 @mixin atMobile {
-  @media (min-width: 440px) {
+  @media (min-width: $mobileWidth) {
     @content;
   }
 }
 
 @mixin atTablet {
-  @media (min-width: 760px) {
+  @media (min-width: $tabletWidth) {
     @content;
   }
 }
 
 @mixin atDesktop {
-  @media (min-width: 1200px) {
+  @media (min-width: $desktopWidth) {
     @content;
   }
 }

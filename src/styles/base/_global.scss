@@ -17,6 +17,10 @@ a {
   font-family: $font-display;
   letter-spacing: $font-display--letter-spacing-less;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* HEADINGS */
@@ -62,13 +66,4 @@ h3 {
 /* SCREEN READER ACCESSIBILITY */
 .sr-only {
   @include srOnly;
-}
-
-/* MARGIN */
-.margin-left-auto {
-  margin-left: auto;
-}
-
-.margin-right-auto {
-  margin-right: auto;
 }

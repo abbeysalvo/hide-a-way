@@ -102,11 +102,16 @@ $col-12: 100%;
     &-end {
       justify-content: flex-end;
     }
+    &-space-between {
+      justify-content: space-between;
+    }
   }
 
   &--gap {
     gap: 1rem;
-
+    &-0 {
+      gap: 0;
+    }
     &-3xs {
       gap: 0.25rem;
     }
@@ -132,10 +137,41 @@ $col-12: 100%;
       gap: 8rem;
     }
   }
+
+  &--no-wrap {
+    flex: 0 0 auto;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
 }
 
-.no-wrap {
-  flex: 0 0 auto;
+@include atMobile {
+  .mobile\:flex--row {
+    flex-direction: row;
+  }
+  .mobile\:flex--column {
+    flex-direction: column;
+  }
+}
+
+@include atTablet {
+  .tablet\:flex--row {
+    flex-direction: row;
+  }
+  .tablet\:flex--column {
+    flex-direction: column;
+  }
+}
+
+@include atDesktop {
+  .desktop\:flex--row {
+    flex-direction: row;
+  }
+  .desktop\:flex--column {
+    flex-direction: column;
+  }
 }
 
 @mixin flex--col {

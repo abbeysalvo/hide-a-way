@@ -1,0 +1,132 @@
+.margin-left {
+  @each $sizeName, $size in $sizes {
+    &-#{$sizeName} {
+      margin-left: $size;
+    }
+    &-neg-#{$sizeName} {
+      @if $size == "auto" {
+        margin-left: $size;
+      } @else {
+        margin-left: calc($size * -1);
+      }
+    }
+  }
+}
+
+@include atMobile {
+  .mobile\:margin-left {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        margin-left: $size;
+      }
+
+      &-neg-#{$sizeName} {
+        @if $size == "auto" {
+          margin-left: $size;
+        } @else {
+          margin-left: calc($size * -1);
+        }
+      }
+    }
+  }
+}
+
+@include atTablet {
+  .tablet\:margin-left {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        margin-left: $size;
+      }
+      &-neg-#{$sizeName} {
+        @if $size == "auto" {
+          margin-left: $size;
+        } @else {
+          margin-left: calc($size * -1);
+        }
+      }
+    }
+  }
+}
+
+@include atDesktop {
+  .desktop\:margin-left {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        margin-left: $size;
+      }
+      &-neg-#{$sizeName} {
+        @if $size == "auto" {
+          margin-left: $size;
+        } @else {
+          margin-left: calc($size * -1);
+        }
+      }
+    }
+  }
+}
+
+.margin-right {
+  @each $sizeName, $size in $sizes {
+    &-#{$sizeName} {
+      margin-right: $size;
+    }
+    &-neg-#{$sizeName} {
+      @if $size == "auto" {
+        margin-left: $size;
+      } @else {
+        margin-left: calc($size * -1);
+      }
+    }
+  }
+}
+
+@include atMobile {
+  .mobile\:margin-right {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        margin-right: $size;
+      }
+      &-neg-#{$sizeName} {
+        @if $size == "auto" {
+          margin-left: $size;
+        } @else {
+          margin-left: calc($size * -1);
+        }
+      }
+    }
+  }
+}
+
+@include atTablet {
+  .tablet\:margin-right {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        margin-right: $size;
+      }
+      &-neg-#{$sizeName} {
+        @if $size == "auto" {
+          margin-left: $size;
+        } @else {
+          margin-left: calc($size * -1);
+        }
+      }
+    }
+  }
+}
+
+@include atDesktop {
+  .desktop\:margin-right {
+    @each $sizeName, $size in $sizes {
+      &-#{$sizeName} {
+        margin-right: $size;
+      }
+      &-neg-#{$sizeName} {
+        @if $size == "auto" {
+          margin-left: $size;
+        } @else {
+          margin-left: calc($size * -1);
+        }
+      }
+    }
+  }
+}

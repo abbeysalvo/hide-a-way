@@ -15,6 +15,10 @@
     gap: 1rem;
     margin-right: auto;
 
+    &:hover {
+      text-decoration: none;
+    }
+
     .logo__image {
       height: 3rem;
       fill: $primary-dark;
