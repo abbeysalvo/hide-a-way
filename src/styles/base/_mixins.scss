@@ -53,6 +53,17 @@
   width: initial;
 }
 
+@mixin borderSeparator(
+  $borderColor: $base,
+  $position: "bottom",
+  $spacing: 2rem,
+  $strokeThickness: 1px
+) {
+  border-#{$position}: solid $strokeThickness $borderColor;
+  margin-#{$position}: $spacing;
+  padding-#{$position}: $spacing;
+}
+
 /*@mixin tablet-lg {
   .tablet-lg\:@include-content;
 }*/

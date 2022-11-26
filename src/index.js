@@ -7,6 +7,15 @@ import reportWebVitals from "./reportWebVitals";
 import Error from "./components/Error/Error";
 import Shop, { loader as shopLoader } from "./components/Shop/Shop";
 import About from "./components/About/About";
+import FAQ from "./components/FAQ/FAQ";
+import Privacy from "./components/Privacy/Privacy";
+import Location from "./components/Location/Location";
+
+export const siteNavigation = [
+  { path: "/", title: "Home" },
+  { path: "/shop", title: "Shop" },
+  { path: "/about", title: "About Us" },
+];
 
 const router = createBrowserRouter([
   {
@@ -20,6 +29,18 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/visit",
+        element: <Location />,
+      },
+      {
+        path: "/faq",
+        element: <FAQ />,
+      },
+      {
+        path: "/privacy-terms",
+        element: <Privacy />,
       },
     ],
     element: <App />,

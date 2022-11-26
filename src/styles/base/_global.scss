@@ -19,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+/* HEADINGS */
 h1 {
   @include font-display-xl;
   letter-spacing: 1px;
@@ -58,6 +59,16 @@ h3 {
   }
 }
 
+/* SCREEN READER ACCESSIBILITY */
 .sr-only {
   @include srOnly;
+}
+
+/* MARGIN */
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-right-auto {
+  margin-right: auto;
 }
