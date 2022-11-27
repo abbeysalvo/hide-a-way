@@ -55,7 +55,7 @@ const Header = ({ ...props }) => {
         </div>
         <ul className="header__nav-list">
           {siteNavigation.map(({ path, title }) => (
-            <li>
+            <li key={path}>
               {/**
                * ACCESSIBILITY: Label Active Link
                * Provide an invisible label that is read aloud to screen reader users

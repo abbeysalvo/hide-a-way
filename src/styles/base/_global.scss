@@ -23,6 +23,10 @@ a {
   }
 }
 
+ul {
+  padding: 0;
+}
+
 /* HEADINGS */
 h1 {
   @include font-display-xl;

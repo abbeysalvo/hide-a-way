@@ -4,7 +4,8 @@ $font-sans--letter-spacing: 0;
 $font-display: "League Gothic", sans-serif;
 $font-display--letter-spacing-less: 1px;
 $font-display--letter-spacing: 2px;
-$text-shadow-sm: 2px 2px 0 rgba(0, 0, 0, 0.1);
+$text-shadow-sm: 2px 2px 3px rgba(0, 0, 0, 0.15);
+$text-shadow-md: 0 0 10px rgba(0, 0, 0, 0.15);
 
 .font {
   &-sans {
@@ -214,4 +215,10 @@ $text-shadow-sm: 2px 2px 0 rgba(0, 0, 0, 0.1);
   font-family: $font-display;
   font-size: $font-display-3xl;
   letter-spacing: $font-display--letter-spacing;
+}
+
+.text {
+  &--uppercase {
+    text-transform: uppercase;
+  }
 }

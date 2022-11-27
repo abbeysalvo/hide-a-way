@@ -12,6 +12,8 @@
 @import "base/_fonts.scss"; */
 @import "base/_margin.scss";
 @import "base/_typography.scss";
+@import "base/height.scss";
+@import "base/shapes.scss";
 @import "base/_width.scss";
 @import "base/_global.scss";
 
@@ -28,3 +30,4 @@
 @import "../components/Header/_header.scss";
 @import "../components/Footer/_footer.scss";
 @import "../components/Modal/_modal.scss";
+@import "../components/Shop/_shop.scss";

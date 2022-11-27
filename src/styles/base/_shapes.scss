@@ -1,0 +1,60 @@
+@mixin squareOptions {
+  @each $sizeName, $size in $sizes {
+    &-#{$sizeName} {
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: $size;
+      width: $size;
+    }
+  }
+}
+
+@mixin circleOptions {
+  @each $sizeName, $size in $sizes {
+    &-#{$sizeName} {
+      @include squareOptions;
+      border-radius: 100%;
+    }
+  }
+}
+
+.circle {
+  @include circleOptions;
+}
+
+.square {
+  @include squareOptions;
+}
+
+@include atMobile {
+  .mobile\: {
+    &circle {
+      @include circleOptions;
+    }
+    &square {
+      @include squareOptions;
+    }
+  }
+}
+
+@include atTablet {
+  .tablet\: {
+    &circle {
+      @include circleOptions;
+    }
+    &square {
+      @include squareOptions;
+    }
+  }
+}
+
+@include atDesktop {
+  .desktop\: {
+    &circle {
+      @include circleOptions;
+    }
+    &square {
+      @include squareOptions;
+    }
+  }
+}

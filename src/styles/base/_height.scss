@@ -1,35 +1,35 @@
-@mixin widthOptions {
+@mixin heightOptions {
   @each $sizeName, $size in $sizes {
     &-#{$sizeName} {
-      width: $size;
+      height: $size;
     }
   }
 }
 
-.width {
-  @include widthOptions;
+.height {
+  @include heightOptions;
 }
 
 @include atMobile {
   .mobile\: {
-    &width {
-      @include widthOptions;
+    &height {
+      @include heightOptions;
     }
   }
 }
 
 @include atTablet {
   .tablet\: {
-    &width {
-      @include widthOptions;
+    &height {
+      @include heightOptions;
     }
   }
 }
 
 @include atDesktop {
   .desktop\: {
-    &width {
-      @include widthOptions;
+    &height {
+      @include heightOptions;
     }
   }
 }

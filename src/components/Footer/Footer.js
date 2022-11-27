@@ -21,7 +21,7 @@ const Footer = ({ ...props }) => {
               width="100%"
             >
               <polygon
-                vector-effect="non-scaling-stroke"
+                vectorEffect="non-scaling-stroke"
                 points="27.84 3.58 27.88 0 18 0 18 9.46 9.88 9.46 9.88 0 0 0 0 25.1 5.67 28.79 9.88 28.78 15.41 32.37 15.41 20.01 9.88 16.42 18 16.42 18 28.81 27.88 28.81 27.84 3.58"
               />
             </svg>
@@ -34,7 +34,7 @@ const Footer = ({ ...props }) => {
             <h2 className="footer__content_title">Quick Links</h2>
             <ul className="footer__nav-list flex--gap-2xs">
               {siteNavigation.map(({ path, title }) => (
-                <li>
+                <li key={path}>
                   {/**
                    * ACCESSIBILITY: Label Active Link
                    * Provide an invisible label that is read aloud to screen reader users
