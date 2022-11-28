@@ -66,52 +66,50 @@ $text-shadow-md: 0 0 10px rgba(0, 0, 0, 0.15);
   }
 
   &-display {
-    &-sans {
-      &-3xs {
-        font-family: $font-display;
-        font-size: $font-display-3xs;
-        letter-spacing: $font-display--letter-spacing-less;
-      }
-      &-2xs {
-        font-family: $font-display;
-        font-size: $font-display-2xs;
-        letter-spacing: $font-display--letter-spacing-less;
-      }
-      &-xs {
-        font-family: $font-display;
-        font-size: $font-display-xs;
-        letter-spacing: $font-display--letter-spacing-less;
-      }
-      &-sm {
-        font-family: $font-display;
-        font-size: $font-display-sm;
-        letter-spacing: $font-display--letter-spacing-less;
-      }
-      &-md {
-        font-family: $font-display;
-        font-size: $font-display-md;
-        letter-spacing: $font-display--letter-spacing;
-      }
-      &-lg {
-        font-family: $font-display;
-        font-size: $font-display-lg;
-        letter-spacing: $font-display--letter-spacing;
-      }
-      &-xl {
-        font-family: $font-display;
-        font-size: $font-display-xl;
-        letter-spacing: $font-display--letter-spacing;
-      }
-      &-2xl {
-        font-family: $font-display;
-        font-size: $font-display-2xl;
-        letter-spacing: $font-display--letter-spacing;
-      }
-      &-3xl {
-        font-family: $font-display;
-        font-size: $font-display-3xl;
-        letter-spacing: $font-display--letter-spacing;
-      }
+    &-3xs {
+      font-family: $font-display;
+      font-size: $font-display-3xs;
+      letter-spacing: $font-display--letter-spacing-less;
+    }
+    &-2xs {
+      font-family: $font-display;
+      font-size: $font-display-2xs;
+      letter-spacing: $font-display--letter-spacing-less;
+    }
+    &-xs {
+      font-family: $font-display;
+      font-size: $font-display-xs;
+      letter-spacing: $font-display--letter-spacing-less;
+    }
+    &-sm {
+      font-family: $font-display;
+      font-size: $font-display-sm;
+      letter-spacing: $font-display--letter-spacing-less;
+    }
+    &-md {
+      font-family: $font-display;
+      font-size: $font-display-md;
+      letter-spacing: $font-display--letter-spacing-less;
+    }
+    &-lg {
+      font-family: $font-display;
+      font-size: $font-display-lg;
+      letter-spacing: $font-display--letter-spacing;
+    }
+    &-xl {
+      font-family: $font-display;
+      font-size: $font-display-xl;
+      letter-spacing: $font-display--letter-spacing;
+    }
+    &-2xl {
+      font-family: $font-display;
+      font-size: $font-display-2xl;
+      letter-spacing: $font-display--letter-spacing;
+    }
+    &-3xl {
+      font-family: $font-display;
+      font-size: $font-display-3xl;
+      letter-spacing: $font-display--letter-spacing;
     }
   }
 }

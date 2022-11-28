@@ -86,7 +86,7 @@ const Footer = ({ ...props }) => {
                 <ul className="footer__nav-list footer__nav-list--row  flex--gap-2xs">
                   <li>
                     <a
-                      className="icon--social--facebook icon--outline icon--3xs"
+                      className="icon--social--facebook icon--outline height-4 width-4"
                       href="https://www.facebook.com/hideawaydoors"
                       title="Facebook"
                     >
@@ -95,7 +95,7 @@ const Footer = ({ ...props }) => {
                   </li>
                   <li>
                     <a
-                      className="icon--social--twitter icon--outline icon--3xs"
+                      className="icon--social--twitter icon--outline height-4 width-4"
                       href="https://www.twitter.com/WayDoors"
                       title="Twitter"
                     >
@@ -104,7 +104,7 @@ const Footer = ({ ...props }) => {
                   </li>
                   <li>
                     <a
-                      className="icon--social--youtube icon--outline icon--3xs"
+                      className="icon--social--youtube icon--outline height-4 width-4"
                       href="https://www.youtube.com/channel/UCX13r8IwUFvYtFggS8Jj9YA"
                       title="YouTube"
                     >
@@ -113,7 +113,7 @@ const Footer = ({ ...props }) => {
                   </li>
                   <li>
                     <a
-                      className="icon--social--instagram icon--outline icon--3xs"
+                      className="icon--social--instagram icon--outline height-4 width-4"
                       href="https://www.instagram.com/hideawaydoors/"
                       title="Instagram"
                     >
@@ -128,7 +128,7 @@ const Footer = ({ ...props }) => {
             <ul className="footer__nav-list footer__nav-list--row">
               <li>
                 <div
-                  className="icon--payment--amex icon--fill icon--lg"
+                  className="icon--payment--amex icon--fill height-8 width-8"
                   title="American Express"
                 >
                   <span className="sr-only">American Express</span>
@@ -136,7 +136,7 @@ const Footer = ({ ...props }) => {
               </li>
               <li>
                 <div
-                  className="icon--payment--mastercard icon--fill icon--lg"
+                  className="icon--payment--mastercard icon--fill height-8 width-8"
                   title="Master Card"
                 >
                   <span className="sr-only">Master Card</span>
@@ -144,7 +144,7 @@ const Footer = ({ ...props }) => {
               </li>
               <li>
                 <div
-                  className="icon--payment--paypal icon--fill icon--lg"
+                  className="icon--payment--paypal icon--fill height-8 width-8"
                   title="PayPal"
                 >
                   <span className="sr-only">PayPal</span>
@@ -152,7 +152,7 @@ const Footer = ({ ...props }) => {
               </li>
               <li>
                 <div
-                  className="icon--payment--visa icon--fill icon--lg"
+                  className="icon--payment--visa icon--fill height-8 width-8"
                   title="Visa"
                 >
                   <span className="sr-only">Visa</span>

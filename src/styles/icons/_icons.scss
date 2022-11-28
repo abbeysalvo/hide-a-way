@@ -1,4 +1,4 @@
-$sizeMultiplier: 2;
+$sizeMultiplier: 1;
 $iconSizes: (
   "3xs": calc($font-sans-3xs * $sizeMultiplier),
   "2xs": calc($font-sans-2xs * $sizeMultiplier),
@@ -10,6 +10,21 @@ $iconSizes: (
   "2xl": calc($font-sans-2xl * $sizeMultiplier),
   "3xl": calc($font-sans-3xl * $sizeMultiplier),
 );
+
+@mixin iconSizeOptions {
+  @each $sizeName, $size in $iconSizes {
+    &-#{$sizeName} {
+      height: $size;
+      width: $size;
+    }
+  }
+}
+
+@mixin iconSizeOption($sizeName) {
+  $size: map-get($iconSizes, $sizeName);
+  height: $size;
+  width: $size;
+}
 
 @mixin icon {
   background-position: center center;
@@ -24,48 +39,39 @@ $iconSizes: (
 }
 
 @mixin icon-3xs {
-  height: map.get($iconSizes, "3xs");
-  width: map.get($iconSizes, "3xs");
+  @include iconSizeOption("3xs");
 }
 
 @mixin icon-2xs {
-  height: map.get($iconSizes, "2xs");
-  width: map.get($iconSizes, "2xs");
+  @include iconSizeOption("2xs");
 }
 
 @mixin icon-xs {
-  height: map.get($iconSizes, "xs");
-  width: map.get($iconSizes, "xs");
+  @include iconSizeOption("xs");
 }
 
 @mixin icon-sm {
-  height: map.get($iconSizes, "sm");
-  width: map.get($iconSizes, "sm");
+  @include iconSizeOption("sm");
 }
 
 @mixin icon-md {
-  height: map.get($iconSizes, "md");
-  width: map.get($iconSizes, "md");
+  @include iconSizeOption("md");
 }
 
 @mixin icon-lg {
-  height: map.get($iconSizes, "lg");
-  width: map.get($iconSizes, "lg");
+  @include iconSizeOption("lg");
 }
 
 @mixin icon-xl {
-  height: map.get($iconSizes, "xl");
-  width: map.get($iconSizes, "xl");
+  @include iconSizeOption("xl");
 }
 
 @mixin icon-2xl {
-  height: map.get($iconSizes, "2xl");
-  width: map.get($iconSizes, "2xl");
+  @include iconSizeOption("2xl");
 }
 
 @mixin icon-3xl {
-  height: map.get($iconSizes, "3xl");
-  width: map.get($iconSizes, "3xl");
+  @include iconSizeOption("3xl");
 }
 
 $icon-url--before: "data:image/svg+xml;charset=UTF-8, %3Csvg version='1.1' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E";
@@ -125,6 +131,9 @@ $iconUrl-stop: "data:image/svg+xml;charset=UTF-8, %3Csvg version='1.1' width='10
 
 .icon {
   @include icon;
+
+  @include iconSizeOptions;
+
   &--asterisk {
     @include icon-asterisk;
   }

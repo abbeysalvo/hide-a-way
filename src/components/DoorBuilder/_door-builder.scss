@@ -1,0 +1,41 @@
+$active-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+$hover-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+
+.door-builder {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 142px);
+
+  @include atTablet {
+    flex-direction: row;
+  }
+
+  &__image {
+    @include flex--col-12;
+    height: 40vh;
+    object-fit: cover;
+    object-position: top center;
+
+    @include atTablet {
+      @include flex--col-6;
+      height: 100%;
+    }
+    @include atDesktop {
+      @include flex--col-8;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 40vh;
+    overflow: scroll;
+    padding: 1.5rem;
+
+    @include atTablet {
+      height: 100%;
+      padding: 2rem;
+    }
+  }
+}

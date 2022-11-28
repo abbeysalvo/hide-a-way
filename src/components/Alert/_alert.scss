@@ -1,0 +1,36 @@
+.alert {
+  background-color: $base-light;
+  border-left: 4px solid $base-dark;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  line-height: 150%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: relative;
+
+  &__icon {
+    padding-left: 3rem;
+    &::before {
+      @include icon-check--thin;
+      @include icon-sm;
+      background-color: $base-dark;
+      background-size: 50%;
+      border-radius: 50%;
+      content: "";
+      left: 0.75rem;
+      padding: 0.25rem;
+      position: absolute;
+    }
+  }
+
+  &__content {
+  }
+
+  &__link {
+    display: block;
+    font-size: $font-sans-md;
+    font-style: italic;
+    clear: both;
+  }
+}

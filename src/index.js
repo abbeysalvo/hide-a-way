@@ -5,11 +5,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Error from "./components/Error/Error";
-import Shop, { loader as shopLoader } from "./components/Shop/Shop";
+import DoorBuilder, {
+  loader as shopLoader,
+} from "./components/DoorBuilder/DoorBuilder";
 import About from "./components/About/About";
 import FAQ from "./components/FAQ/FAQ";
 import Privacy from "./components/Privacy/Privacy";
 import Location from "./components/Location/Location";
+import Shop from "./components/Shop/Shop";
 
 export const siteNavigation = [
   { path: "/", title: "Home" },
@@ -24,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/shop/builder",
+        element: <DoorBuilder />,
         loader: shopLoader,
       },
       {

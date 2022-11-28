@@ -1,0 +1,90 @@
+$active-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+$hover-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+
+.swatch {
+  align-items: center;
+  border: 2px solid $base-light;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__title {
+    @include font-sans-2xs;
+    align-items: center;
+    background-color: rgba($primary-darker, 0.5);
+    color: $base-light;
+    display: none;
+    font-weight: 600;
+    height: 100%;
+    justify-content: center;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    text-shadow: $text-shadow-sm;
+    text-transform: uppercase;
+    width: 100%;
+
+    &--no-image {
+      background-color: transparent;
+      color: rgba($base, 0.5);
+      display: flex;
+      text-shadow: none;
+
+      &:hover {
+        border: 2px dashed $base;
+        color: $base;
+      }
+    }
+
+    @include atTablet {
+      @include font-sans-sm;
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    border: 2px solid $base;
+    box-shadow: $hover-shadow;
+
+    .swatch__title {
+      display: flex;
+    }
+  }
+
+  &--no-image {
+    border: 2px dashed $base-light;
+    &:hover {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &--active {
+    border: 4px solid $primary;
+    box-shadow: $active-shadow;
+    cursor: default;
+    &::after {
+      @include icon-check--thin;
+      @include icon-2xs;
+      background-color: $primary;
+      background-size: 50%;
+      border-radius: 50%;
+      bottom: 0.5rem;
+      content: "";
+      padding: 0.25rem;
+      position: absolute;
+      right: 0.5rem;
+    }
+
+    .swatch__title {
+      background-color: rgba($primary-darker, 0.5);
+      cursor: default;
+      display: flex;
+    }
+
+    &:hover {
+      border: 4px solid $primary;
+    }
+  }
+}
